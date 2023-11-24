@@ -1,0 +1,24 @@
+body {
+    background-color: #F2F2F2;
+    min-width: 250px;
+    overflow-y: scroll;
+}
+
+.disable-scroll {
+    overflow-y: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}

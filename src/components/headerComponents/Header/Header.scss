@@ -1,0 +1,66 @@
+@use "../../../util/helpers/sassHelpers.scss" as *;
+
+header {
+    position: sticky;
+    z-index: 11111;
+    background: $background;
+}
+
+#root header:first-child {
+    top: 0;
+}
+
+.header-container {
+    @include width-min-max(230px, 100vw);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 24px 0 0;
+    max-width: 343px;
+    margin: auto;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+
+        .mainHeading {
+            @include font-S-W(24px, $W-900);
+        }
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    border: none;
+
+    &:hover svg rect {
+        fill: $red;
+    }
+}
+
+@media screen and (min-width: 722px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include width-min-max(670px, 754px);
+        padding: 35px 0 28px 0;
+
+        > div .mainHeading {
+            font-size: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .header-container {
+        @include width-min-max(907px, 907px);
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1151px) {
+    .header-container {
+        margin-left: max(calc((100vw - 907px) / 2 - 120px));
+    }
+}
