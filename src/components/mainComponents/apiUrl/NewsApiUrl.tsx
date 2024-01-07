@@ -36,7 +36,7 @@ const NewsApiUrl = ({ mainUrl, isCategoryData }: NewsApiUrlProps) => {
         setUrl(
             `${mainUrl}?q=${encodedSearchInput}&searchIn=title&language=en&page=${urlPageNum}&apiKey=${apiKey}`
         );
-    }, [mainUrl, encodedSearchInput, urlPageNum]);
+    }, [mainUrl, encodedSearchInput, urlPageNum, apiKey]);
 
     return (
         <FetchData
