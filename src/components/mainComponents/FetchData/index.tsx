@@ -38,13 +38,10 @@ const FetchData = ({ isCategoryData, url, isLoading, setIsLoading, updateApiUrlP
     const cardClass = isCategoryData ? "category-card" : "widget-card";
     const isThereArticleData = articleData.length > 0;
 
-    const fetchNumRef = useRef(0);
     const timeoutIdRef = useRef<null | NodeJS.Timeout>(null);
 
     const fetchData = useCallback(
         async (url: string) => {
-            fetchNumRef.current = fetchNumRef.current + 1;
-            console.log("Fetch ran", isCategoryData, fetchNumRef.current, url);
             try {
                 const response = await fetch(url);
 
@@ -85,7 +82,7 @@ const FetchData = ({ isCategoryData, url, isLoading, setIsLoading, updateApiUrlP
                 }
             } catch (error) {
                 setIsError(true);
-                console.error("Error in fetchData:", cardClass, error);
+                console.error("Error in fetchData:", error);
 
             } finally {
                 setIsLoading(false);

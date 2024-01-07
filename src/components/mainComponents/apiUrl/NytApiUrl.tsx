@@ -42,13 +42,13 @@ const NytApiUrl = ({ mainUrl, isCategoryData }: NytApiUrlProps) => {
             setIsLoading(true);
         }, 20);
 
-    }, [setIsLoading, categoryName]);
+    }, [setIsLoading]);
 
     useEffect(() => {
         setUrl(
             `${mainUrl}?limit=100&offset=${urlOffset}&api-key=${apiKey}`
         );
-    }, [urlOffset]);
+    }, [mainUrl, urlOffset, apiKey]);
 
     return (
         <FetchData
