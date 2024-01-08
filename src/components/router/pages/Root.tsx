@@ -1,4 +1,3 @@
-import { memo } from "react";
 import Header from "../../headerComponents/Header";
 import RenderMain from "../../mainComponents/RenderMain";
 import ViewportSizesProvider from "../../../context/ViewportSizesProvider";
@@ -16,4 +15,4 @@ const Root = () => {
     );
 };
 
-export default memo(Root);
+export default Root;

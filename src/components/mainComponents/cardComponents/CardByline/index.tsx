@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { removeByFromByline } from "../../../../util/helpers/functions/titleAndByline/removeByFromByline";
 import { sliceStrRemoveByAddElipsis } from "../../../../util/helpers/functions/titleAndByline/sliceStrRemoveByAddElipsis";
 
@@ -18,4 +17,4 @@ const CardByline = ({ byline }: CardBylineProps) => {
     );
 };
 
-export default memo(CardByline);
+export default CardByline;

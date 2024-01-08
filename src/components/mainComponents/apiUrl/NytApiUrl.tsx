@@ -1,6 +1,6 @@
 import FetchData from "../FetchData";
 import { useParams } from "react-router-dom";
-import { memo, useState, useEffect, useCallback, useMemo,  } from "react";
+import { useState, useEffect, useCallback, useMemo,  } from "react";
 
 interface NytApiUrlProps {
     mainUrl: string;
@@ -62,4 +62,4 @@ const NytApiUrl = ({ mainUrl, isCategoryData }: NytApiUrlProps) => {
     );
 };
 
-export default memo(NytApiUrl);
+export default NytApiUrl;

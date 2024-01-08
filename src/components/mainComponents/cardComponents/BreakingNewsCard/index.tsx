@@ -1,4 +1,3 @@
-import { memo } from "react";
 import "./BreakingNewsCard.scss";
 import CardByline from "../CardByline";
 import CardTitle from "../CardTitle";
@@ -19,4 +18,4 @@ const BreakingNewsCard = ({ title, byline, url }: BreakingNewsCardProps) => {
     );
 };
 
-export default memo(BreakingNewsCard);
+export default BreakingNewsCard;

@@ -1,6 +1,6 @@
 import "./Nav.scss";
 import { NavLink } from "react-router-dom";
-import { Dispatch, SetStateAction, MouseEventHandler, memo } from "react";
+import { Dispatch, SetStateAction, MouseEventHandler } from "react";
 import {
     HomeSvg, GeneralSvg, BusinessSvg, HealthSvg, ScienceSvg, SportsSvg, TechnologySvg, FavoritesSvg,
 } from "../../../assets/svg/svgImports";
@@ -61,4 +61,4 @@ const Nav = ({ setIsMenuOpen }: NavProps) => {
     );
 };
 
-export default memo(Nav);
+export default Nav;

@@ -1,5 +1,4 @@
 import "./MainHeading.scss"
-import { memo } from "react";
 import { Link } from "react-router-dom";
 
 const MainHeading = () => {
@@ -12,4 +11,4 @@ const MainHeading = () => {
     );
 };
 
-export default memo(MainHeading);
+export default MainHeading;

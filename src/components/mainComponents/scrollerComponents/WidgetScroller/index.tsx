@@ -1,5 +1,4 @@
 import "./WidgetScroller.scss";
-import { memo } from "react";
 import { ArticleData } from "../../FetchData";
 import WidgetCard from "../../cardComponents/WidgetCard";
 
@@ -14,9 +13,9 @@ const WidgetScroller = ({
 
     return (
         <div className="widget-scroller_container">
-            {articleData.map((article, index) => {
+            {articleData.map((article) => {
                 return (
-                    <article key={`${index}-${article.title}`} className="widget-card">
+                    <article key={`wid-${article.title}`} className="widget-card">
                         <WidgetCard
                             timestamp={article.timestamp}
                             title={article.title}
@@ -30,4 +29,4 @@ const WidgetScroller = ({
     );
 };
 
-export default memo(WidgetScroller);
+export default WidgetScroller;

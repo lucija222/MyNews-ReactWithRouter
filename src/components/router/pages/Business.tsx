@@ -1,4 +1,3 @@
-import { memo } from "react";
 import NytApiUrl from "../../mainComponents/apiUrl/NytApiUrl";
 
 const Business = () => {
@@ -10,4 +9,4 @@ const Business = () => {
     );
 };
 
-export default memo(Business);
+export default Business;

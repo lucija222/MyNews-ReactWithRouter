@@ -1,6 +1,5 @@
 import "./WidgetContainer.scss";
 import { RedCircleSvg, RightArrowSvg } from "../../../assets/svg/svgImports";
-import { memo } from "react";
 import NytApiUrl from "../apiUrl/NytApiUrl";
 
 const WidgetContainer = () => {
@@ -27,4 +26,4 @@ const WidgetContainer = () => {
     );
 };
 
-export default memo(WidgetContainer);
+export default WidgetContainer;

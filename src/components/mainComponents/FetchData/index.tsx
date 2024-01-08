@@ -5,7 +5,7 @@ import InfiniteScroller from "../scrollerComponents/InfiniteScroller";
 import { filterJsonData } from "../../../util/helpers/functions/filterJSON/filterJsonData";
 import { allowOrDisableScroll } from "../../../util/helpers/functions/allowOrDisableScroll";
 import { replaceOrMergeArticleData } from "../../../util/helpers/functions/replaceOrMergeArticleData";
-import { useCallback, useEffect, useState, useRef, Dispatch, SetStateAction, memo } from "react";
+import { useCallback, useEffect, useState, useRef, Dispatch, SetStateAction } from "react";
 
 export type ArticleData = {
     url: string;
@@ -141,4 +141,4 @@ const FetchData = ({ isCategoryData, url, isLoading, setIsLoading, updateApiUrlP
     );
 };
 
-export default memo(FetchData);
+export default FetchData;
