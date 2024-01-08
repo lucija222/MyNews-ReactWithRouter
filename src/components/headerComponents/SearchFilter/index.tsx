@@ -2,7 +2,7 @@ import "./SearchFilter.scss";
 import { useNavigate } from "react-router-dom";
 import { SearchSvg } from "../../../assets/svg/svgImports";
 import { EncodedSearchInputContext } from "../../../context/EncodedSearchInputProvider";
-import { Dispatch, SetStateAction, FormEventHandler, useContext, useState, useRef, useEffect, memo } from "react"; 
+import { Dispatch, SetStateAction, FormEventHandler, useContext, useState, useRef, useEffect } from "react"; 
 
 interface SearchFilterProps {
     isMenuOpen?: boolean,
@@ -92,4 +92,4 @@ const SearchFilter = ({isMenuOpen, setIsMenuOpen }: SearchFilterProps) => {
     );
 };
 
-export default memo(SearchFilter);
+export default SearchFilter;

@@ -1,5 +1,5 @@
 import FetchData from "../FetchData";
-import { memo, useState, useContext, useEffect, useMemo, useCallback, } from "react";
+import { useState, useContext, useEffect, useMemo, useCallback, } from "react";
 import { EncodedSearchInputContext } from "../../../context/EncodedSearchInputProvider";
 
 interface NewsApiUrlProps {
@@ -51,4 +51,4 @@ const NewsApiUrl = ({ mainUrl, isCategoryData }: NewsApiUrlProps) => {
     );
 };
 
-export default memo(NewsApiUrl);
+export default NewsApiUrl;

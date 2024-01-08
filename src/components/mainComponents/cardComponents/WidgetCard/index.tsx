@@ -1,4 +1,3 @@
-import { memo } from "react";
 import CardTitle from "../CardTitle";
 import "./WidgetCard.scss";
 
@@ -17,4 +16,4 @@ const WidgetCard = ({ timestamp, title, url }: WidgetCardProps) => {
     );
 };
 
-export default memo(WidgetCard);
+export default WidgetCard;

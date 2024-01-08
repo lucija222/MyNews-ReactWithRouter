@@ -1,5 +1,5 @@
 import "./RenderMain.scss";
-import { useContext, memo } from "react";
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import Nav from "../../headerComponents/Nav";
 import { ViewportSizesContext } from "../../../context/ViewportSizesProvider";
@@ -25,4 +25,4 @@ const RenderMain = () => {
     );
 };
 
-export default memo(RenderMain);
+export default RenderMain;

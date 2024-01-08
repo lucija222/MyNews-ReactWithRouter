@@ -1,4 +1,3 @@
-import { memo } from "react";
 import NewsApiUrl from "../../mainComponents/apiUrl/NewsApiUrl";
 
 const SearchResults = () => {
@@ -9,4 +8,4 @@ const SearchResults = () => {
     );
 };
 
-export default memo(SearchResults); 
+export default SearchResults; 

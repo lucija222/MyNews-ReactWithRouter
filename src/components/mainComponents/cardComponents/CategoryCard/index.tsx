@@ -1,7 +1,7 @@
 import "./CategoryCard.scss";
 import { CardTitle, CardByline, HeartButton } from "../cardComponentsImports";
 import { FavoriteArticlesDataContext } from "../../../../context/FavoriteArticlesDataProvider";
-import { useState, MouseEventHandler, useContext, useEffect, ReactEventHandler, memo } from "react";
+import { useState, MouseEventHandler, useContext, useEffect, ReactEventHandler } from "react";
 
 interface CategoryCardProps {
     url: string;
@@ -101,4 +101,4 @@ const CategoryCard = ({ index, isFavoritesCategory, ...article }: CategoryCardPr
     );
 };
 
-export default memo(CategoryCard);
+export default CategoryCard;

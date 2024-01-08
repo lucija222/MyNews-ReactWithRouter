@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useEffect, useState, useCallback, memo} from "react";
+import { ReactNode, createContext, useEffect, useState, useCallback } from "react";
 
 export interface FavoriteArticleData {
     url: string;
@@ -82,4 +82,4 @@ const FavoriteArticlesDataProvider = ({ children }: {children: ReactNode}) => {
     );
 };
 
-export default memo(FavoriteArticlesDataProvider);
+export default FavoriteArticlesDataProvider;

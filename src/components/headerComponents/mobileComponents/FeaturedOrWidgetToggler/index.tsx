@@ -1,5 +1,5 @@
 import "./FeaturedOrWidgetToggler.scss";
-import { MouseEventHandler, memo } from "react";
+import { MouseEventHandler } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const FeaturedOrWidgetToggler = () => {
@@ -43,4 +43,4 @@ const FeaturedOrWidgetToggler = () => {
     );
 };
 
-export default memo(FeaturedOrWidgetToggler);
+export default FeaturedOrWidgetToggler;

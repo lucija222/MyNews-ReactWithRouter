@@ -2,7 +2,7 @@ import "./Header.scss";
 import { HamburgerSvg } from "../../../assets/svg/svgImports";
 import { ViewportSizesContext } from "../../../context/ViewportSizesProvider";
 import FeaturedOrWidgetToggler from "../mobileComponents/FeaturedOrWidgetToggler";
-import { useState, MouseEventHandler, useContext, useEffect, memo } from "react";
+import { useState, MouseEventHandler, useContext, useEffect } from "react";
 import { Banner, BannerModal, MainHeading, Menu, SearchFilter } from "../headerImports";
 import { allowOrDisableScroll } from "../../../util/helpers/functions/allowOrDisableScroll";
 
@@ -89,4 +89,4 @@ const Header = () => {
     );
 };
 
-export default memo(Header);
+export default Header;

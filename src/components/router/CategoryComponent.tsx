@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { useParams } from "react-router-dom";
 import { Home, General, Business, Health, Science, Sports, Technology, Favorites, SearchResults } from "./pages/imports";
 
@@ -33,4 +32,4 @@ const CategoryComponent = () => {
 	return <>{returnCategoryPage()}</>;
 };
 
-export default memo(CategoryComponent);
+export default CategoryComponent;

@@ -1,5 +1,5 @@
 import "./CategoryScroller.scss";
-import { useContext, memo } from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ArticleData } from "../../FetchData";
 import WidgetContainer from "../../WidgetContainer";
@@ -46,7 +46,7 @@ const CategoryScroller = ({
             if (!isFavoriteOrSearchCategory && isBreakingCard) {
                 return (
                     <article
-                        key={`${index}-${article.title}`}
+                        key={`cat-${article.title}`}
                         className="category-card breaking-news-card"
                     >
                         <BreakingNewsCard
@@ -59,7 +59,7 @@ const CategoryScroller = ({
             } else {
                 return (
                     <article
-                        key={`${index}-${article.title}`}
+                        key={`cat-${article.title}`}
                         className="category-card"
                     >
                         <CategoryCard
@@ -87,4 +87,4 @@ const CategoryScroller = ({
     );
 };
 
-export default memo(CategoryScroller);
+export default CategoryScroller;

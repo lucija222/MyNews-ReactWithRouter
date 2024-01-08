@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect, memo } from "react";
+import { useContext, useState, useEffect } from "react";
 import { FavoriteArticlesDataContext } from "../../../context/FavoriteArticlesDataProvider";
 import RenderScroller from "../../mainComponents/scrollerComponents/RenderScroller";
 import Loader from "../../UIcomponents/Loader";
@@ -41,4 +41,4 @@ const Favorites = () => {
     );
 };
 
-export default memo(Favorites);
+export default Favorites;
